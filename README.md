@@ -38,6 +38,10 @@ Finally, I would like to thank the following assistants: Claude Haiku 4.5, Claud
 
 ---
 
+![Tab 01](images/tab01.jpg)
+
+at the end of README you will find more images.
+
 ## Project Structure
 
 ```
@@ -664,3 +668,12 @@ litellm.request_timeout = 20
 ---
 
 **Happy agent building! 🤖**
+
+some more images from the project.
+
+![Tab 03](images/tab03.jpg)
+
+![Tab 06](images/tab06.jpg)
+
+![Tab 08](images/tab08.jpg)
+
