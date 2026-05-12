@@ -1,0 +1,28 @@
+[project]
+name = "multi-agents-v1"
+version = "0.1.0"
+description = "Agents Cockpit application"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit",
+    "crewai[litellm]",
+    "crewai-tools",
+    "tavily-python",
+    "langchain-community",
+    "langchain-core",
+    "langchain-text-splitters",
+    "chromadb",
+    "langsmith",
+    "langchain-ollama==1.1.0",
+    "ollama==0.6.1",
+    "reportlab",
+    "litellm>=1.83.0",
+    "pypdf>=6.10.2",
+    "langgraph>=1.1.6",
+    "langgraph-cli[inmem]>=0.4.8",
+    "openai>=2.30.0",
+    "langchain-openai>=1.2.1",
+]
+
+[dependency-groups]
+dev = []

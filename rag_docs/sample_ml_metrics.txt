@@ -1,0 +1,38 @@
+Machine Learning Evaluation Metrics
+
+Accuracy:
+Accuracy is the most straightforward performance measure for classification tasks. It represents the percentage of correct predictions made by the model on the total number of predictions. The formula is: (True Positives + True Negatives) / Total Predictions. Accuracy is useful when all classes are equally important and the dataset is balanced. However, it can be misleading with imbalanced datasets.
+
+Precision:
+Precision measures the proportion of true positive predictions among all positive predictions made by the model. Formula: True Positives / (True Positives + False Positives). High precision means that when the model predicts a positive class, it's usually correct. This metric is important in scenarios where false positives are costly, such as spam detection or medical diagnosis.
+
+Recall (Sensitivity):
+Recall measures the ability of a model to find all relevant instances. Formula: True Positives / (True Positives + False Negatives). High recall means the model correctly identifies most of the positive instances. This is crucial in applications where missing positive instances is costly, such as disease detection or fraud prevention.
+
+F1-Score:
+The F1-score is the harmonic mean of precision and recall. Formula: 2 * (Precision * Recall) / (Precision + Recall). It provides a balanced measure when you care about both precision and recall. The F1-score ranges from 0 to 1, with 1 being perfect performance.
+
+ROC-AUC (Receiver Operating Characteristic - Area Under Curve):
+ROC-AUC measures the model's ability to distinguish between classes across all classification thresholds. The AUC value ranges from 0 to 1, where 1 indicates a perfect classifier and 0.5 indicates a random classifier. ROC curves plot the True Positive Rate against the False Positive Rate at various threshold settings.
+
+Cross-Validation:
+Cross-validation is a technique to evaluate models using different portions of the dataset for training and testing. The most common approach is k-fold cross-validation, where the dataset is divided into k subsets (folds), and the model is trained k times, each time using a different fold as the test set and the remaining k-1 folds for training.
+
+Confusion Matrix:
+A confusion matrix is a table used to describe the performance of a classification model. It shows True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN). From this matrix, various metrics like accuracy, precision, recall, and F1-score can be derived.
+
+Mean Absolute Error (MAE):
+For regression tasks, MAE measures the average absolute difference between predicted and actual values. Formula: Σ|actual - predicted| / n. It's easy to interpret as it's in the same units as the target variable but doesn't penalize large errors as heavily as other metrics.
+
+Root Mean Squared Error (RMSE):
+RMSE is another regression metric that measures the square root of the average squared differences between predicted and actual values. Formula: √(Σ(actual - predicted)² / n). RMSE penalizes larger errors more heavily than MAE, making it useful when large errors are particularly undesirable.
+
+Best Practices for Model Evaluation:
+1. Always use proper train-test splits, preferably with cross-validation
+2. Choose metrics appropriate for your specific problem and dataset characteristics
+3. Consider the business context when selecting metrics
+4. Monitor multiple metrics rather than relying on a single metric
+5. Be aware of class imbalance and use appropriate metrics
+6. Report confidence intervals or standard deviations for stability assessment
+7. Compare against baseline models
+8. Document the evaluation methodology for reproducibility
